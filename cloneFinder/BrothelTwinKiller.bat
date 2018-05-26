@@ -1,0 +1,1 @@
+CloneSpy -a cloneFinder\Twins.cst -e

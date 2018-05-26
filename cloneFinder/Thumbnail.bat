@@ -1,0 +1,1 @@
+CloneSpy -a .\thumbnailCopy.cst -e

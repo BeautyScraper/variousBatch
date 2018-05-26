@@ -1,0 +1,1 @@
+python "D:\Developed\Automation\python\extractMatchingLines.py" D:\Developed\Automation\inHaste\quicKlip.txt "instagram.com" >>"temp.txt"
