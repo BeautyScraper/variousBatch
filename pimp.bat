@@ -29,5 +29,6 @@ call FastCopy.bat D:\paradise\stuff\sinisterBabes "C:\Heaven\Haven\brothel\%resu
 md "C:\Heaven\Haven\brothel\ArtiFacial"
 call FastCopy.bat C:\GalImgs\Art "C:\Heaven\Haven\brothel\ArtiFacial"
 
-
-call cloneFinder\BrothelTwinKiller.bat
+cd cloneFinder\
+call BrothelTwinKiller.bat
+cd ..
