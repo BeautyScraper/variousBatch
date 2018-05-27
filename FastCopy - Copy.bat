@@ -1,1 +1,0 @@
-"C:\app\FastCopyPortable\FastCopyPortable.exe" /log /cmd="move" /auto_close %1 /to=%2
