@@ -3,7 +3,7 @@ python "..\python\cutter.py"
 del /q/f ..\inHaste\99.txt
 del /q/f ..\inHaste\AB.txt
 call FmoveBytxt.bat ..\inHaste\9.txt D:\paradise\stuff\toCut
-call FmoveBytxt.bat ..\inHaste\8.txt D:\paradise\stuff\DecideLater
+call XdivisionCatalog.bat
 call FmoveBytxt.bat ..\inHaste\7.txt D:\paradise\stuff\Essence\G1Movies
 call FmoveBytxt.bat ..\inHaste\6.txt D:\paradise\stuff\Essence\EverLasting
 call FmoveBytxt.bat ..\inHaste\5.txt D:\paradise\stuff\SoLong

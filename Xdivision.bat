@@ -1,0 +1,1 @@
+call FastCopy.bat %1 %~p1xDivision\
