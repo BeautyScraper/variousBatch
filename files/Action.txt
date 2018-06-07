@@ -1,0 +1,2 @@
+ke [girlClothe] [clotheAction]
+[Action] toh [reaction]

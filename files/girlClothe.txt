@@ -6,3 +6,4 @@ bra
 saye
 chunari
 skirt
+[clotheAdjective] [girlClothe]
