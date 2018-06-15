@@ -19,5 +19,12 @@ call FmoveBytxt.bat ..\inHaste\tv.txt D:\paradise\Series\organized
 call FmoveBytxt.bat ..\inHaste\films.txt D:\paradise\Movies
 call FmoveBytxt.bat ..\inHaste\Haya.txt D:\paradise\stuff\Essence\HayaKeSath
 
+cd backData\
+call takeBackup.bat
+cd ..
+
+cd inSync\
+call takeBackup.bat
+cd ..
 
 call stuffCleanup.bat
