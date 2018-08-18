@@ -2,7 +2,7 @@ cd /d %~dp0
 python "..\python\cutter.py"
 del /q/f ..\inHaste\99.txt
 del /q/f ..\inHaste\AB.txt
-call FmoveBytxt.bat ..\inHaste\9.txt D:\paradise\stuff\toCut
+call FmoveBytxt.bat ..\inHaste\9.txt D:\paradise\interesting
 call XdivisionCatalog.bat
 call FmoveBytxt.bat ..\inHaste\7.txt D:\paradise\stuff\Essence\G1Movies
 call FmoveBytxt.bat ..\inHaste\6.txt D:\paradise\stuff\Essence\EverLasting
