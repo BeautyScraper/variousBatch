@@ -16,7 +16,7 @@ IF NOT %_dummy% == "%temp%" (set selDir=D:\paradise\stuff\Images\Warriors) ELSE 
 
 
 Set _dummy="%temp:inisterBabe=%"
-IF NOT %_dummy% == "%temp%" (set selDir3=C:\Heaven\Haven\NayaMaal) ELSE (ECHO .)
+IF NOT %_dummy% == "%temp%" (set selDir2=C:\Heaven\Haven\NayaMaal) ELSE (ECHO .)
 
 
 

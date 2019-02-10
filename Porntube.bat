@@ -1,7 +1,7 @@
 python "D:\Developed\Automation\python\extractMatchingLines.py" D:\Developed\Automation\inHaste\quicKlip.txt pornhub >> D:\Developed\Automation\Batch\chudengi.txt
 
 cd /d C:\Heaven\Haven\pornTubes
-D:\Developed\Automation\Batch\youtube-dl --no-playlist --download-archive D:\Developed\Automation\Batch\ChudiHuyi.txt -a D:\Developed\Automation\Batch\chudengi.txt 
+D:\Developed\Automation\Batch\youtube-dl --verbose --download-archive D:\Developed\Automation\Batch\ChudiHuyi.txt -a D:\Developed\Automation\Batch\chudengi.txt 
 echo %errorlevel%
 set WINSCP_RESULT=%ERRORLEVEL%
 if %WINSCP_RESULT% equ 0 (

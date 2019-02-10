@@ -29,10 +29,9 @@ del /f Selected.opml
 del /f RSelected.opml
 del /f MSelected.opml
 python "D:\Developed\Automation\ImgSelector\whoreCounselling.py" "%inDir%"
-for /f "delims=" %%i in (Selected.opml) do xcopy "%%i" "%selDir%"
+for /f "delims=" %%i in (Selected.opml) do call excerpts.bat "%%i" %selDir%
 set _tempDir=D:\GalImgs\comics
 for /f "delims=" %%i in (MSelected.opml) do md D:%%~pi && xcopy %%~dpi. D:%%~pi && rd /s/q %%~dpi
 xcopy /s/c/r/y %_tempDir% D:\paradise\stuff\comics\PleasureRead && rd /s/q %_tempDir%
 for /f "delims=" %%i in (RSelected.opml) do rd /s/q %%~dpi
-pause 
-
+pause
