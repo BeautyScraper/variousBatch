@@ -7,6 +7,7 @@ set selDir=D:\paradise\stuff\Images\heartThrober
 set inDir=%inD%\%temp%
 set selDir2=D:\paradise\stuff\Images\Chudvati
 set selDir3=D:\paradise\stuff\Images\littleToImagination
+set selDir4=D:\paradise\stuff\Images\FaceSwap
 
 
 
@@ -25,10 +26,12 @@ del /f Scanned.opml
 del /f Selected.opml
 del /f RSelected.opml
 del /f MSelected.opml
+del /f ADSelected.opml
 python "D:\Developed\Automation\ImgSelector\whoreCounselling.py" "%inDir%"
-for /f "delims=" %%i in (Selected.opml) do xcopy "%%i" "%selDir%" && del /f "%%i"
-for /f "delims=" %%i in (MSelected.opml) do xcopy "%%i" "%selDir2%" && del /f "%%i"
-for /f "delims=" %%i in (RSelected.opml) do xcopy "%%i" "%selDir3%" && del /f "%%i"
+for /f "delims=" %%i in (Selected.opml) do xcopy "%%i" "%selDir%" 
+for /f "delims=" %%i in (MSelected.opml) do xcopy "%%i" "%selDir2%" 
+for /f "delims=" %%i in (RSelected.opml) do xcopy "%%i" "%selDir3%"
+for /f "delims=" %%i in (ADSelected.opml) do xcopy "%%i" "%selDir4%" && del /f "%%i"
 for /f "delims=" %%i in (scanned.opml) do del /f "%%i"
 
 

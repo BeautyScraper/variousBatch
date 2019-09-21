@@ -1,3 +1,5 @@
+call .\instaIndian\NewSuperstar.bat
+
 python "..\python\notSoRand.py"
 call GettingVariableFromFile.bat result.txt
 md "C:\Heaven\Haven\brothel\%result.txt%"

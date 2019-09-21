@@ -1,7 +1,9 @@
+CALL "D:\Developed\Automation\Batch\instaIndian\SinDian.bat"
+
 set inDir=D:\paradise\stuff\sinisterVideos
 set selDir=C:\temp\SelectedVideos
 set selDir2=F:\Paradise\stuff\Filtered\hardcore
-set selDir3=D:\paradise\stuff\Images\permanent\
+set selDir3=C:\PersonalBuffer\NayiPatni
 del /f Scanned.opml
 del /f Selected.opml
 del /f RSelected.opml
