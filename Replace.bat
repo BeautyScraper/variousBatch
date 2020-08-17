@@ -1,0 +1,1 @@
+"D:\Developed\Automation\fnr\fnr.exe" --cl --dir "D:\Developed\Automation\Batch" --fileMask "TempCopy"  --useRegEx --find "$[^@]*?@hudengi " --replace "%1"

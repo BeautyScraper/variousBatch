@@ -1,0 +1,12 @@
+"D:\paradise\stuff\Essence\EverLasting" "H:\paradise\stuff\Essence\EverLasting" 5
+"D:\paradise\stuff\SoLong" "H:\paradise\stuff\SoLong" 5
+"D:\paradise\stuff\Essence\Animation" "H:\paradise\stuff\Essence\Animation" 5
+"D:\paradise\stuff\Essence\Art\Pavitra" "H:\paradise\stuff\Essence\Art\Pavitra" 20
+"D:\paradise\stuff\Essence\Art\randy" "H:\paradise\stuff\Essence\Art\randy" 20
+"D:\paradise\stuff\Essence\Art\Sanskari" "H:\paradise\stuff\Essence\Art\Sanskari" 20
+"D:\paradise\stuff\Essence\HayaKeSath" "H:\paradise\stuff\Essence\HayaKeSath" 150
+"D:\paradise\stuff\Essence\Sharmili" "H:\paradise\stuff\Essence\Sharmili" 100
+"D:\paradise\stuff\Images\CFSC\0" "H:\paradise\stuff\Images\CFSC\0" 2000
+"D:\paradise\stuff\Images\CFSC\1" "H:\paradise\stuff\Images\CFSC\1" 2000
+"D:\paradise\stuff\Images\CFSC\2" "H:\paradise\stuff\Images\CFSC\2" 2000
+"D:\paradise\stuff\Images\heartThrober" "H:\paradise\stuff\Images\heartThrober" 2000

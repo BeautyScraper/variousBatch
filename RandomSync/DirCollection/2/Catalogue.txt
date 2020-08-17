@@ -1,0 +1,1 @@
+"D:\Developed\Automation\Batch\RandomSync\DirCollection" "D:\Developed\Automation\Batch\RandomSync\SrcDirs" 1

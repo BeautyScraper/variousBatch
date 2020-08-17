@@ -34,4 +34,3 @@ set _tempDir=D:\GalImgs\comics
 for /f "delims=" %%i in (MSelected.opml) do md D:%%~pi && xcopy %%~dpi. D:%%~pi && rd /s/q %%~dpi
 xcopy /s/c/r/y %_tempDir% D:\paradise\stuff\comics\PleasureRead && rd /s/q %_tempDir%
 for /f "delims=" %%i in (RSelected.opml) do rd /s/q %%~dpi
-

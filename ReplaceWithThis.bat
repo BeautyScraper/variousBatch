@@ -1,0 +1,2 @@
+"D:\Developed\Automation\fnr\fnr.exe" --cl --dir %~dp0 --fileMask "TempCopy"  --useRegEx --useEscapeChars --find "[^@\n]*@hudengi " --replace %1
+"D:\Developed\Automation\fnr\fnr.exe" --cl --dir %~dp0 --fileMask "TempCopy"  --useRegEx --useEscapeChars --find "[^@\n]*Yummy(?=[^\\s])" --replace %1

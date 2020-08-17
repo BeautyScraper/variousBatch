@@ -1,5 +1,8 @@
-D:\paradise\stuff\Images\
 D:\Mobile\
-D:\paradise\stuff\Essence\*
 D:\Developed\Automation\*
 D:\paradise\Books\Read\*
+D:\paradise\stuff\Essence\FS\*
+D:\paradise\stuff\Images\Chudvati\*
+D:\paradise\stuff\Images\littleToImagination\*
+D:\paradise\stuff\Images\Warriors\*
+D:\paradise\stuff\Images\walls\*
