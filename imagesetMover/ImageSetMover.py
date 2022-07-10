@@ -17,6 +17,8 @@ def moveDirByCriteria(dirToChange,checkInsideThisDir,moveToThisDir):
     
 
 def moveByFastCopy(txtFileName,dstination):
+    if not os.path.exists(txtFileName):
+        return
     fastCopyLocation = 'C:\\app\\FastCopyPortable\\FastCopyPortable.exe'
     cmdTemplate = '''%0 /log /cmd="move" /auto_close /force_close /srcfile=%1 /to=%2 '''
     cmd = cmdTemplate.replace('%0',fastCopyLocation)

@@ -6,12 +6,12 @@ del /f "D:\Developed\Automation\inHaste\quicKlip.txt"
 ren "D:\Developed\Automation\inHaste\temp.txt" quicKlip.txt 
 
 cd /d D:\paradise\Youtube\Dota
-D:\Developed\Automation\Batch\youtube-dl -f 136+140 --no-playlist --download-archive  D:\Developed\Automation\Batch\completedC.txt -a D:\Developed\Automation\Batch\uTubeLinksWithConstraint.txt 
+D:\Developed\Automation\Batch\youtube-dl -f 136+140 --no-playlist --download-archive  D:\Developed\Automation\Batch\completedC.txt -a D:\Developed\Automation\Batch\uTubeLinksWithConstraint.txt --match-title "(Dota| vs )" 
 echo %errorlevel%
 set WINSCP_RESULT=%ERRORLEVEL%
 if %WINSCP_RESULT% equ 0 (
   echo Success
-  del /f D:\Developed\Automation\Batch\uTubeLinksWithConstraint.txt
+  REM del /f D:\Developed\Automation\Batch\uTubeLinksWithConstraint.txt
   start D:\paradise\Youtube\Dota
 ) else (
   timeout 6

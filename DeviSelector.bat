@@ -51,7 +51,7 @@ IF NOT %_dummy% == "%temp%" (python "D:\Developed\Automation\python\sinisterHtml
 
 
 
-python ..\python\ifVeryLessFIle.py "%inDir%" 5
+REM python ..\python\ifVeryLessFIle.py "%inDir%" 5
 
 
 

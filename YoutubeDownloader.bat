@@ -28,7 +28,7 @@ ren "D:\Developed\Automation\inHaste\temp.txt" quicKlip.txt
  
 python "D:\Developed\Automation\python\randomizeFile.py"
 cd /d D:\paradise\Youtube
-D:\Developed\Automation\Batch\youtube-dl --no-playlist --download-archive  D:\Developed\Automation\Batch\completed.txt -a D:\Developed\Automation\Batch\uTubeLinks.txt 
+D:\Developed\Automation\Batch\youtube-dl --no-playlist  --download-archive  D:\Developed\Automation\Batch\completed.txt -a D:\Developed\Automation\Batch\uTubeLinks.txt 
 echo %errorlevel%
 set WINSCP_RESULT=%ERRORLEVEL%
 if %WINSCP_RESULT% equ 0 (

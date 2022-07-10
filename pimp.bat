@@ -29,8 +29,8 @@ md "C:\Heaven\Haven\brothel\%result.txt%"
 call FastCopy.bat D:\paradise\stuff\sinisterBabes "C:\Heaven\Haven\brothel\%result.txt% sinisterBabes"
 
 
-md "C:\Heaven\Haven\brothel\ArtiFacial"
-call FastCopy.bat C:\GalImgs\Art "C:\Heaven\Haven\brothel\ArtiFacial"
+REM md "C:\Heaven\Haven\brothel\ArtiFacial"
+REM call FastCopy.bat C:\GalImgs\Art "C:\Heaven\Haven\brothel\ArtiFacial"
 
 cd cloneFinder\
 call BrothelTwinKiller.bat

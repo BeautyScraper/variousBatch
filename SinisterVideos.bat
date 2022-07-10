@@ -13,6 +13,6 @@ for /f "delims=" %%i in (Selected.opml) do xcopy "%%i" "%selDir%" && del /f "%%i
 for /f "delims=" %%i in (MSelected.opml) do xcopy "%%i" "%selDir2%" && del /f "%%i" 
 for /f "delims=" %%i in (RSelected.opml) do xcopy "%%i" "%selDir3%" && del /f "%%i"
 for /f "delims=" %%i in (scanned.opml) do del /f "%%i"
-::python HeartQueensName.py >> heartQueens.txt
+REM python HeartQueensName.py >> heartQueens.txt
 ::xcopy D:\paradise\stuff\Images\permanent\2* C:\Users\Alind\PycharmProjects\ImgDownloader\chosen\
 ::del /f/q D:\paradise\stuff\Images\permanent\2\*

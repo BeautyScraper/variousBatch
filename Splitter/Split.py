@@ -1,7 +1,31 @@
 import os
 import glob
+from pathlib import Path
+import argparse
+import random
 
 
+def dir_path(string):
+    if os.path.isdir(string):
+        return string
+    else:
+        try:
+            _ = Path(string)
+        except:
+            raise NotADirectoryError(string)
+    return string
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--dirToSplit', type=dir_path)
+parser.add_argument('--filesPerDie', type=int)
+parser.add_argument('--DirName', type=ascii)
+parser.add_argument('--rand', dest='rand', action='store_true')
+parser.add_argument('--no-rand', dest='rand', action='store_false')
+parser.set_defaults(rand=False)
+
+args = parser.parse_args()
+
+# breakpoint()
 def splitTextFileIntoList(fileName,fSize=100):
     splitLines = []
     if type(fileName) == str:
@@ -10,6 +34,8 @@ def splitTextFileIntoList(fileName,fSize=100):
             allLines = the_file.readlines()
     else:
         allLines = fileName
+    if args.rand:
+        random.shuffle(allLines)
     for tfi in range(0,len(allLines),fSize):
         if tfi == 0:
             continue
@@ -46,6 +72,7 @@ def splitDir(dirPath,fsize=50,dstDirPat = '*'):
     splitFileNames = splitTextFile(filelistName,fsize)
     for i,sFN in enumerate(splitFileNames):
         dpTargeDir = dstDirPat.replace("*",str(i+1))
+        dpTargeDir = dpTargeDir.replace("\\\\",'\\').strip("'")
         moveByFastCopy(sFN,dpTargeDir)
 
 def moveByFastCopy(txtFileName,dstination):
@@ -58,5 +85,6 @@ def moveByFastCopy(txtFileName,dstination):
     # import pdb;pdb.set_trace()
     os.system(cmd)
     
-# splitTextFile('fs.txt',1000)
-splitDir('D:\paradise\stuff\Essence\FS\SharedBuffer\ChutKiDevi1',1000)
+if __name__ == '__main__':
+    # splitDir('C:\\Heaven\\YummyBaker',1000,'C:\\Heaven\\YummyBaker\\club*\\')
+    splitDir(args.dirToSplit,args.filesPerDie,args.DirName)
