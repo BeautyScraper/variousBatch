@@ -23,7 +23,10 @@ def dividesmartly_helper(filename,tp,targetPath):
     
     with open(filepath,'w') as fp:
         flines_w = [x.rstrip() for x in flines if not targetPath.lower() in x.lower()]
-        fp.write('\n'.join(flines_w))
+        fc = '\n'.join(flines_w)
+        fp.write(fc)
+    if fc.strip() == '':
+        Path(filepath).unlink()
     if len(filesToMove) > 0:
         if Path(tp).is_dir():
             fileListCopy(filesToMove,tp)
@@ -41,7 +44,7 @@ def main():
     filemovingdict = {'1.txt':r'D:\paradise\stuff\Essence\FS\yummyClips\deletable',
     '2.txt':r'D:\paradise\stuff\Essence\FS\yummyClips\TheekThak',
     '3.txt':r'D:\paradise\stuff\Essence\FS\yummyClips\SachMe',
-    '4.txt':r'C:\dumpinggrounds\known_loved_video.txt'}
+    '6.txt':r'C:\dumpinggrounds\known_loved_video.txt'}
     dividesmartly(targetPath,filemovingdict)
     
 main()

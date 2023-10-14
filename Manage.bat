@@ -2,7 +2,6 @@ rd /s/q D:\paradise\stuff\Scanned\SEEN
 
 
 python D:\Developed\Automation\Batch\smartdivider.py
-REM pause
 
 cd /d %~dp0
 python "..\python\cutter.py"
@@ -29,6 +28,9 @@ call FmoveBytxt.bat ..\inHaste\films.txt D:\paradise\Movies
 
 CHOICE /T 10 /D n /m "press y delete all"
 if "%ERRORLEVEL%"=="1" (del C:\temp\deletable\*.* )
+
+CHOICE /T 10 /D n /m "press y delete all from scanned"
+if "%ERRORLEVEL%"=="1" (del D:\paradise\stuff\Scanned\*.* )
 
 CHOICE /T 10 /D n /m "delete yummyClips "
 if "%ERRORLEVEL%"=="1" (del D:\paradise\stuff\essence\FS\yummyClips\deletable\*.* )
@@ -65,3 +67,5 @@ python "D:\Developed\Automation\mtut\gttof.py" --dirPath C:\GalImgs\GIFS --exts 
 
 python D:\Developed\Automation\Batch\fileCountDecision.py
 REM pause
+
+python D:\Developed\jobbers\sd_pipe_helper\main.py
