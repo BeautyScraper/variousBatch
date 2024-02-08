@@ -27,13 +27,13 @@ call FmoveBytxt.bat ..\inHaste\tv.txt D:\paradise\Series\organized
 call FmoveBytxt.bat ..\inHaste\films.txt D:\paradise\Movies
 
 CHOICE /T 10 /D n /m "press y delete all"
-if "%ERRORLEVEL%"=="1" (del C:\temp\deletable\*.* )
+if "%ERRORLEVEL%"=="1" (del /q C:\temp\deletable\*.*  && del /q C:\temp\deleatble && del /q C:\dumpinggrounds\sd_residual\masks && rmdir /s/q C:\dumpinggrounds\sd_residual\cropped_faces && mkdir C:\dumpinggrounds\sd_residual\cropped_faces)
 
 CHOICE /T 10 /D n /m "press y delete all from scanned"
-if "%ERRORLEVEL%"=="1" (del D:\paradise\stuff\Scanned\*.* )
+if "%ERRORLEVEL%"=="1" (rmdir /s/q D:\paradise\stuff\Scanned && mkdir D:\paradise\stuff\Scanned )
 
 CHOICE /T 10 /D n /m "delete yummyClips "
-if "%ERRORLEVEL%"=="1" (del D:\paradise\stuff\essence\FS\yummyClips\deletable\*.* )
+if "%ERRORLEVEL%"=="1" (del /q D:\paradise\stuff\essence\FS\yummyClips\deletable\*.* )
 
 set curentDir=%cd%
 
@@ -60,8 +60,8 @@ call main.bat
 cd ..
 
 call stuffCleanup.bat
-mkdir D:\paradise\stuff\new\imageset 
-xcopy /s C:\GalImgs\imageSet D:\paradise\stuff\new\imageset && rmdir /s/q C:\GalImgs\imageSet\ 
+mkdir D:\paradise\stuff\new\imageset
+xcopy /s C:\GalImgs\imageSet D:\paradise\stuff\new\imageset && rmdir /s/q C:\GalImgs\imageSet\ && mkdir C:\GalImgs\imageSet
 
 python "D:\Developed\Automation\mtut\gttof.py" --dirPath C:\GalImgs\GIFS --exts "*.mp4" "*.mkv" --outPath D:\paradise\stuff\new\pvd
 
