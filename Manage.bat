@@ -69,3 +69,5 @@ python D:\Developed\Automation\Batch\fileCountDecision.py
 REM pause
 
 python D:\Developed\jobbers\sd_pipe_helper\main.py
+
+call "D:\Developed\Automation\mtut2\mtut\fs_run.bat"
